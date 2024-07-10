@@ -1,10 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
+import { ShopLayout } from "../components/layouts";
+import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <>
-    <h1>Ecommerce-Adso</h1>
-    </>
-  );
+    <ShopLayout title={"Ecommerce Sena - Home"} pageDescription={"Encuentralos mejores estilos en camisas, buzos y gorras"}>
+      <Typography variant ='h1' component='h1'>Tienda</Typography>
+      <Typography>Articulos</Typography>
+    </ShopLayout>
+  )
 }
