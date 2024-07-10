@@ -36,9 +36,6 @@ export const ShopLayout: FC<Props> = ({children, title, pageDescription, imageFu
       }}>
         {children}
       </main>
-
-
-
     </>
   )
 }
