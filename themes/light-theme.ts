@@ -9,7 +9,10 @@ export const lightTheme = createTheme({
         },
         secondary: {
             main: '#31DE84'
-        }
+        }, 
+        info:{
+            main:'#fff'
+        },
         },
     components: {
         MuiLink: {
@@ -50,11 +53,10 @@ export const lightTheme = createTheme({
                 variant: 'contained',
                 size: 'small',
                 disableElevation: true,
+                color: 'info',
             },
             styleOverrides: {
                 root: {
-                    backgroundColor: 'white',
-                    color: 'black',
                     textTransform: 'none',
                     boxShadow: 'none',
                     borderRadius: 10,

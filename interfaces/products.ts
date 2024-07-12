@@ -4,21 +4,21 @@ export interface IProduct {
     images: string[];
     inStock: number;
     price: number;
-    sizes: ISizes[];
+    sizes: ISize[];
     slug: string;
-    type: ITypes;
+    type: IType;
     tags: string[];
     title: string;
     gender: 'hombre' | 'mujer' | 'unisex';
 }
-export type ISizes =
+export type ISize =
 | 'XS'
 | 'S'
 | 'M'
 | 'L'
 | 'XL'
 | 'XXL';
-export type ITypes =
+export type IType =
  | 'camisetas'
  | 'buzos'
  | 'gorras'
