@@ -8,7 +8,7 @@ interface SeedProduct {
     type: ValidTypes;
     tags: string[];
     title: string;
-    gender: 'hombre' | 'mujer' | 'unisex';
+    gender: 'Man' | 'Woman' | 'Unisex';
 }
 type ValidSizes =
 | 'XS'
@@ -18,10 +18,10 @@ type ValidSizes =
 | 'XL'
 | 'XXL';
 type ValidTypes =
- | 'camisetas'
- | 'buzos'
- | 'gorras'
- | 'pantalones';
+ | 'T-Shirt'
+ | 'Hoodie'
+ | 'Cap'
+ | 'Pants';
 
  interface SeedData{
     products: SeedProduct[];
@@ -37,10 +37,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
          slug: 'camiseta-logo-cent-developer-android',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['sweatshirt'],
          title: 'Developer Android T-shirt',
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -50,10 +50,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['XS', 'S', 'M', 'XL', 'XXL'],
          slug: 'camiseta-logo-cent-developer-angular',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['angular'],
          title: 'Developer Angular T-shirt',
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -63,10 +63,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL', 'XXL'],
          slug: 'camiseta-logo-cent-developer-archlnux',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['archlinux'],
          title: 'Arch Linux T-shirt',
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -76,10 +76,10 @@ type ValidTypes =
          price: 45,
          sizes: ['XS', 'S', 'M', 'L'],
          slug: 'camiseta-logo-cent-developer-aws',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['aws'],
          title: 'AWS T-shirt',
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -89,10 +89,10 @@ type ValidTypes =
          price: 40,
          sizes: ['M', 'L', 'XL', 'XXL'],
          slug: 'camiseta-logo-cent-developer-aws-azure',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['azure', 'aws'],
          title: 'Azure - AWS T-shirt',
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -102,10 +102,10 @@ type ValidTypes =
          price: 35,
          sizes: ['M', 'L', 'XL', 'XXL'],
          slug: 'camiseta-logo-cent-developer-azure',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['azure'],
          title: "Azure T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -115,10 +115,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-css',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['css'],
          title: "CSS T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -128,10 +128,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-docker',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['docker'],
          title: "Docker T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -141,10 +141,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-Cisco',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['Cisco'],
          title: "Cisco T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -154,10 +154,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-Csharp',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['Csharp'],
          title: "Csharp T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -167,10 +167,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-Edubuntu',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['Edubuntu'],
          title: "Edubuntu T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -180,10 +180,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-Flutter',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['Flutter'],
          title: "Flutter T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -193,10 +193,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-Github',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['Github'],
          title: "Github T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -206,10 +206,10 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'camiseta-logo-cent-developer-Github-copilot',
-         type: 'camisetas',
+         type: 'T-Shirt',
          tags: ['Github'],
          title: "Github Copilot T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -218,11 +218,11 @@ type ValidTypes =
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
-         slug: 'camiseta-logo-cent-developer-Github-copilot',
-         type: 'camisetas',
+         slug: 'camiseta-logo-cent-developer-Gitlab',
+         type: 'T-Shirt',
          tags: ['Github'],
          title: "Github Copilot T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -231,11 +231,11 @@ type ValidTypes =
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
-         slug: 'camiseta-logo-cent-developer-Github-copilot',
-         type: 'camisetas',
+         slug: 'camiseta-logo-cent-developer-Golang',
+         type: 'T-Shirt',
          tags: ['Github'],
          title: "Golang T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -244,11 +244,11 @@ type ValidTypes =
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
-         slug: 'camiseta-logo-cent-developer-Github-copilot',
-         type: 'camisetas',
+         slug: 'camiseta-logo-cent-developer-Google',
+         type: 'T-Shirt',
          tags: ['Github'],
          title: "Google Cloud T-shirt",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -258,62 +258,62 @@ type ValidTypes =
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'gorra-tech-github',
-         type: 'gorras',
+         type: 'Cap',
          tags: ['github'],
          title: "Github Cap",
-         gender: 'unisex',
+         gender: 'Unisex',
        },
        {
          description:
            'Embroidered cap made of 100% cotton Vulcano drill, baseball style with button. Features include piped seams, a split front, and eyelets on both sides. Four seams on the visor and a crocodile buckle clasp. Crafted from Super 8 drill fabric (100%) weighing 155 grams. Adjustable standard adult size: 50-60 cm. Metal buckle',
-         images: ['gorra_react.jpg'],
+         images: ['gorra_react.jpg', 'gorra_react.jpg'],
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'gorra-tech-react',
-         type: 'gorras',
+         type: 'Cap',
          tags: ['react'],
          title: "React Cap",
-         gender: 'unisex',
+         gender: 'Unisex',
        },
        {
          description:
            'Embroidered cap made of 100% cotton Vulcano drill, baseball style with button. Features include piped seams, a split front, and eyelets on both sides. Four seams on the visor and a crocodile buckle clasp. Crafted from Super 8 drill fabric (100%) weighing 155 grams. Adjustable standard adult size: 50-60 cm. Metal buckle',
-         images: ['gorra-js.jpg'],
+         images: ['gorra-js.jpg', 'gorra-js.jpg'],
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'gorra-tech-js',
-         type: 'gorras',
+         type: 'Cap',
          tags: ['js'],
          title: "Javascript Cap",
-         gender: 'unisex',
+         gender: 'Unisex',
        },
        {
          description:
            'Embroidered cap made of 100% cotton Vulcano drill, baseball style with button. Features include piped seams, a split front, and eyelets on both sides. Four seams on the visor and a crocodile buckle clasp. Crafted from Super 8 drill fabric (100%) weighing 155 grams. Adjustable standard adult size: 50-60 cm. Metal buckle',
-         images: ['gorra-ubuntu.jpg'],
+         images: ['gorra-ubuntu.jpg', 'gorra-ubuntu.jpg'],
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'gorra-tech-ubuntu',
-         type: 'gorras',
+         type: 'Cap',
          tags: ['ubuntu'],
          title: "Ubuntu Cap",
-         gender: 'unisex',
+         gender: 'Unisex',
        },
        {
          description:
            'Embroidered cap made of 100% cotton Vulcano drill, baseball style with button. Features include piped seams, a split front, and eyelets on both sides. Four seams on the visor and a crocodile buckle clasp. Crafted from Super 8 drill fabric (100%) weighing 155 grams. Adjustable standard adult size: 50-60 cm. Metal buckle',
-         images: ['gorra-angular.jpg'],
+         images: ['gorra-angular.jpg', 'gorra-angular.jpg'],
          inStock: 15,
          price: 69000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'gorra-tech-angular',
-         type: 'gorras',
+         type: 'Cap',
          tags: ['angular'],
          title: "Angular Cap",
-         gender: 'unisex',
+         gender: 'Unisex',
        },
        {
          description:
@@ -323,10 +323,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-special',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['special'],
          title: "Special Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -336,10 +336,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-frontend',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['frontend'],
          title: "Frontend Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -349,10 +349,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-dev',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev'],
          title: "Dev Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -362,10 +362,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-hello-world',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['hello-world'],
          title: "Hello World Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -375,10 +375,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-binary',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['binary'],
          title: "Binary Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -388,10 +388,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-phone',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['phone'],
          title: "Phone Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -401,10 +401,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-cloud',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['cloud'],
          title: "Cloud Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -414,10 +414,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-cloud-2',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['cloud'],
          title: "Cloud Unisex Hoodie",
-         gender: 'unisex',
+         gender: 'Unisex',
        },
        {
          description:
@@ -427,10 +427,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-python',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['python'],
          title: "Python Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -440,10 +440,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-chrome',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['chrome'],
          title: "Chrome Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -453,10 +453,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-atom',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['atom'],
          title: "Atom Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -466,10 +466,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-hola',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['hola'],
          title: "Hi Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -479,10 +479,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-emberd',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['emberd'],
          title: "Emberd Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -492,10 +492,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-id',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-id'],
          title: "Id Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -505,10 +505,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-linux',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-linux'],
          title: "Linux Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -518,10 +518,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-starkoverflow',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-starkoverflow'],
          title: "Starkoverflow Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -531,10 +531,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-internet',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-internet'],
          title: "Internet Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -544,10 +544,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-github',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-github'],
          title: "Github Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -557,10 +557,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-json',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-json'],
          title: "Json Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -570,10 +570,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-json-2',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-json'],
          title: "Json new Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -583,10 +583,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-power-bi',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-power-bi'],
          title: "Power Bi Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        },
        {
          description:
@@ -596,10 +596,10 @@ type ValidTypes =
          price: 126000,
          sizes: ['S', 'M', 'L', 'XL'],
          slug: 'buzo-you-are-code',
-         type: 'buzos',
+         type: 'Hoodie',
          tags: ['dev-code'],
          title: "Code Hoodie",
-         gender: 'hombre',
+         gender: 'Man',
        }
     ]
  }

@@ -1,5 +1,5 @@
-import React from 'react'
-import {initialData} from '..//..//database/productsDB'
+import React, { FC } from 'react'
+import {initialData} from '../../database/productsDB'
 import { Box, Button, CardActionArea, CardMedia, Grid, Link, Typography } from '@mui/material'
 import NextLink from 'next/link'
 import { ItemCounter } from '../ui'
@@ -8,7 +8,14 @@ const productInCart = [
     initialData.products[1],
     initialData.products[2],
 ]
-const CartList = () => {
+
+interface Props {
+    editable?: boolean
+}
+
+
+
+const CartList: FC<Props> = ({editable=false}) => {
   return (
     <>
     {
@@ -19,7 +26,7 @@ const CartList = () => {
                         <Link>
                             <CardActionArea>
                                 <CardMedia
-                                    image={`products/${product.images[0]}`}
+                                    image={`/products/${product.images[0]}`}
                                     component='img'
                                     sx={{borderRadious:5 }}
                                 />
@@ -32,15 +39,24 @@ const CartList = () => {
                     <Typography variant='body1'>{product.title}</Typography>
                     <Typography variant='body1'>Size: <strong>M</strong></Typography>
                     {/* Todo: Conditional */}
-                    <ItemCounter/>
-
+                    {
+                        editable ? <ItemCounter/> : <Typography variant='h5'>3 items</Typography>
+                    }
                 </Box>
                 </Grid>
 
                 <Grid item xs={2} display='flex' alignItems='center' flexDirection='column'>
                     <Typography variant='subtitle1'>{`${product.price}`}</Typography>
-                    <Button variant='text'color='secondary' >Delete</Button>
                     {/* Todo: Conditional */}
+                    {
+                        editable &&(
+                            <Button variant='text'color='secondary' >
+                                Delete
+                            </Button>
+
+                        ) 
+                    }
+                    
                 </Grid>
             </Grid>
         ))
