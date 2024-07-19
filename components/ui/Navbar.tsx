@@ -52,7 +52,7 @@ export const Navbar = () => {
                             </IconButton>
                         </Link>
                     </NextLink>
-                    <NextLink href='/menu' passHref legacyBehavior>
+                    <NextLink href='/Menu' passHref legacyBehavior>
                         <Link>
                             <Button>Menu</Button>
                         </Link>

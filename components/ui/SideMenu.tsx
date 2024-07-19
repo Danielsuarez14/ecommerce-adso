@@ -5,7 +5,7 @@ import { AccountCircleOutlined, AdminPanelSettings, AdminPanelSettingsOutlined, 
 export const SideMenu = () => {
   return (
     <Drawer
-        open={false}
+        open={true}
         anchor ='right'
         sx={{backdropFilter: 'blur(4px', transition: 'all 0.5 sg ease-out'}}
         >
@@ -39,21 +39,21 @@ export const SideMenu = () => {
                     </ListItem>
 
 
-                    <ListItem sx={{xs:'', sm: 'none'}}>
+                    <ListItem sx={{display:{xs:'', sm: 'none'}}}>
                         <ListItemIcon>
                             <MaleOutlined/>
                         </ListItemIcon>
                         <ListItemText primary={'Man'}/>
                     </ListItem>
 
-                    <ListItem sx={{xs:'', sm: 'none'}}>
+                    <ListItem sx={{display:{xs:'', sm: 'none'}}}>
                         <ListItemIcon>
                             <FemaleOutlined/>
                         </ListItemIcon>
                         <ListItemText primary={'Woman'}/>
                     </ListItem>
 
-                    <ListItem sx={{xs:'', sm: 'none'}}>
+                    <ListItem sx={{display:{xs:'', sm: 'none'}}}>
                         <ListItemIcon>
                             <WcOutlined/>
                         </ListItemIcon>
@@ -65,12 +65,13 @@ export const SideMenu = () => {
                         <ListItemIcon>
                             <VpnKeyOutlined/>
                         </ListItemIcon>
-                        <ListItemText primary={'Login'}/>
+                        <ListItemText primary={'Log in'}/>
                     </ListItem>
                     <ListItem>
                         <ListItemIcon>
                            <LoginOutlined/> 
                         </ListItemIcon>
+                        <ListItemText  primary={'Log out'}/>
                     </ListItem>
 
                     <Divider/>
